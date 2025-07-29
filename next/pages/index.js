@@ -20,11 +20,11 @@ export default function Home() {
 
     try {
       // Send conversation history to the API route. It will include the system prompt automatically.
-      const res = await fetch('/api/agent2', { ... })
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: newMessages }),
-      });
+const res = await fetch('/api/agent2', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ messages: newMessages }),
+});
       const data = await res.json();
       if (data.error) {
         // On error just show a generic message
