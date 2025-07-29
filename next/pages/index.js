@@ -20,7 +20,8 @@ export default function Home() {
 
     try {
       // Send conversation history to the API route. It will include the system prompt automatically.
-const res = await fetch('/api/agent2', {
+cagent2
+onst res = await fetch('/api/agent2', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ messages: newMessages }),
