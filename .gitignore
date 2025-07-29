@@ -1,0 +1,6 @@
+# Ignore environment files
+.env.local
+
+# Next.js build output
+.next
+node_modules
